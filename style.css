@@ -1,0 +1,194 @@
+body{
+    background-color:  #0b2545;
+    padding-top: 30px;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+
+    scroll-margin-top: 100px; /* same as nav height */
+}
+.navs{
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(90%, 500px);
+    height: 60px;
+    background-color: aliceblue;
+    border: 2px solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+.navs::-webkit-scrollbar{
+    height: 6px;
+
+}
+.navs::-webkit-scrollbar-thumb{
+    background-color: #0b2545;
+    border-radius: 60px;
+}
+
+#navi{
+    text-align: center;
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+#nav-link{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: auto;
+    color: #000407;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav-link:hover{
+    background-color: #140303;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+
+.greet{
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #a4ccef;
+    text-shadow: 3px 8px 10px #f5f7fa;;   
+    font-size: 40px;
+}
+
+.profile{
+    margin-top: 60px;
+    width: 100%;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.child{
+    width: min(100%, 450px);
+    min-height: 500px;
+    background-color:  #1e6a6a;
+    margin: 30px;
+    text-align: center;
+    border: 5px solid;
+    border-radius: 30px;
+
+}
+#fpf{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bio{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(0, 32, 22);
+}
+.grandson{
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 10px;
+}
+.grandson::-webkit-scrollbar {
+    height: 5px;
+    width: 30px;
+
+}
+.grandson::-webkit-scrollbar-thumb {
+    background: #000407;
+    border-radius: 60px;
+}
+#ts{
+    width: auto;
+    height: 80px;
+    margin: 10px;
+}
+#educ, #tech, #projs{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#education {
+  list-style: none;
+}
+
+#education li {
+  font-family: 'Courier New', Courier, monospace;
+  color: aliceblue;
+  font-size: 30px;
+}
+#education p{
+    font-size: 20px;
+}
+.projects{
+    display: flex;
+    overflow-x: auto;
+    height:35%;
+}
+#proj-logo{
+    height: 80px;
+    width: auto;
+}
+.projects::-webkit-scrollbar{
+    height: 6px;
+
+}
+.projects::-webkit-scrollbar-thumb{
+    background-color: #0b2545;
+    border-radius: 60px;
+}
+
+
+.certs{
+    text-align: center;
+}
+.certs-box{
+    margin: auto;
+    width: min(100%, auto);
+}
+
+.certs-box{
+    display: flex;
+    overflow: auto;
+
+}
+#cert-img{
+    width: auto;
+    background-color: wheat;
+    height: 200px;
+    width: min(90%,300px);
+    margin: 20px;
+}
+
+.certs-box::-webkit-scrollbar{
+    height: 6px;
+
+}
+.certs-box::-webkit-scrollbar-thumb{
+    background-color: #0b2545;
+    border-radius: 60px;
+}
+
+
+
+#sec-name{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #1e6a6a;
+    text-shadow: 2px 4px 10px grey;
+}
