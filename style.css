@@ -1,15 +1,18 @@
 body{
-    background-color:  #0b2545;
+    background-color:  #051425;
     padding-top: 30px;
 }
 html{
     scroll-behavior: smooth;
 }
-
+footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1ddede;
+}
 
 section{
-
-    scroll-margin-top: 100px; /* same as nav height */
+    scroll-margin-top: 150px;
 }
 .navs{
     position: fixed;
@@ -17,10 +20,10 @@ section{
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    width: min(90%, 500px);
-    height: 60px;
+    width: min(90%, 700px);
+    height: 90px;
     background-color: rgb(255, 255, 255);
-    border: 2px solid;
+    border: 5px solid rgb(69, 69, 130);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -34,30 +37,49 @@ section{
     background-color: #0b2545;
     border-radius: 60px;
 }
-
-#navi{
-    text-align: center;
-    display: flex;
-    list-style: none;
+.navs a{
     margin: auto;
 }
-.navs a{
-    margin: 20px;
+.navs a:hover{
+    transform: scale(1.3);
 }
 .nav-icons{
     width: auto;
-    height: 50px;
+    height: 40px;
     margin: auto;
+}
+.greet-box{
+    width: min(90%, auto);
+    padding: 50px;
+    margin-bottom: 280px;
+}
+.greet-you{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #a4ccef;
+    font-size: 80px;
 }
 .greet{
     margin: auto;
     text-align: center;
-    margin-top: 100px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #a4ccef;
-    text-shadow: 3px 8px 10px #f5f7fa;;   
-    font-size: 40px;
+    margin-top: 90px;
 }
+#short-desc{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1ddede;
+    font-size: 30px;
+}
+.html{
+    animation: JSSpan 1s infinite;
+}
+@keyframes JSSpan{
+    from{color: rgb(239, 216, 97);}
+    to {color: rgb(12, 253, 233);}
+}
+#short-desc:hover{
+    transform: scale(1.05);
+}
+
+
 
 .profile{
     margin-top: 60px;
@@ -69,9 +91,9 @@ section{
     justify-content: center;
 }
 .child{
-    width: min(100%, 450px);
-    min-height: 500px;
-    background-color:  #1e6a6a;
+    width: min(100%, 600px);
+    min-height: 700px;
+    background-color:  #040d1f;
     margin: 30px;
     text-align: center;
     border: 5px solid;
@@ -82,21 +104,24 @@ section{
     margin-top: 20px;
     width: 200px;
     height: 200px;
-    border: 3px solid;
+    border: 5px solid rgb(100, 254, 251);
     border-radius: 50%;
     object-fit: cover;
 }
 #name{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: #64acfd;
 }
 #bio{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(0, 32, 22);
+    color: #64acfd;
+    font-size: 20px;
 }
 .tech-wrapper {
     width: 100%;
     overflow: hidden;
-    padding: 10px 0;
+    padding: 40px 0;
 }
 
 .grandson {
@@ -114,43 +139,81 @@ section{
     }
 }
 .ts {
-    height: 80px;
+    border-radius: 50%;
+    background-color: #f5f7fa;
+    height: 150px;
+    width: 150px;
     flex-shrink: 0;
 }
-#educ, #tech, #projs{
+#educ, #tech{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
+    color: #64acfd;
+    text-shadow: 1px 1px seashell;
 }
-#education-line{
-  font-family: 'Courier New', Courier, monospace;
-  color: aliceblue;
-  font-size: 30px;
+#educ{
+    margin-bottom: 100px;
+}
+#education-line, #educ-year{
+    margin: 40px;
+    color: #64acfd;
+    font-size: 40px;
+    font-family:'Arial Narrow Bold', sans-serif;
+
 }
 #educ-year{
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #f5f7fa;
 }
-.projects{
+
+.project-div{
+    margin: 50px;
+    gap: 50px;
     display: flex;
-    overflow-x: auto;
-    height:35%;
+    flex-wrap: wrap;
+    height: auto;
+    width: (1000px, 80%);
 }
-#proj-logo{
-    height: 80px;
-    width: auto;
+.project-box{
+    margin: auto;
+    border: 5px solid rgb(229, 215, 215);
+    height: 500px;
+    width: 400px;
+    background-color: #09031b;
+    border-radius: 10%;
+    text-align: center;
 }
-.projects::-webkit-scrollbar{
-    height: 6px;
+.project-box:hover{
+    background-color: #091130;
 
 }
-.projects::-webkit-scrollbar-thumb{
+.project-logo{
+    background:blue ;
+    height: 60%;
+    width: 90%;
+    margin: 20px;
+    border-radius: 10%;
+}
+.project-text{
+    color:#1ddede;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.project-link{
+    margin: auto;
+    display: block;
+    background-color: #1e6a6a;
+    width: 40%;
+    height: 40px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: 2px solid #f5f7fa;
+    border-radius: 20px;
+    color: #1191f9;
+}
+.project-link:hover{
     background-color: #0b2545;
-    border-radius: 60px;
 }
-
-
 .certs{
     text-align: center;
 }
@@ -164,11 +227,11 @@ section{
     overflow: auto;
 
 }
-#cert-img{
+.cert-img{
     width: auto;
     background-color: wheat;
-    height: 200px;
-    width: min(90%,300px);
+    height: 400px;
+    width: min(90%, 600px);
     margin: 20px;
 }
 
@@ -181,12 +244,11 @@ section{
     border-radius: 60px;
 }
 
-#sec-name{
+.sec-name{
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #1ddede;
-    text-shadow: 2px 4px 10px rgb(180, 178, 178);
 }
 
 .contacts{
@@ -197,20 +259,18 @@ section{
     color: #f5f7fa;
     text-decoration: none;
     text-align: center;
-    background-color: #162c2c;
-    height: 60px;
-    width: 60px;
+    background-color: #040622;
+    height: 100px;
+    width: min(20%,300px);
     font-size: 0;
-    background-color: #054f4f;
+    border: 2px solid white;
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .contacts a:hover{
     background-color: #1ddede;
     border-radius: 30px;
-    width: 120px;
-    opacity: 100;
-    font-size: 24px;
+    font-size: 20px;
     
 }
 .contact-btn{
@@ -233,8 +293,4 @@ section{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-
-     object-fit: contain;
-    transform: translateZ(0);
-    backface-visibility: hidden;
 }

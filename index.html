@@ -8,20 +8,22 @@
 </head>
 <body>
     <header class="navs">
-        <ul id="navi">
-            <li id="nav-item"><a href="#greet"><img src="nav-icons/home.gif" class="nav-icons" alt="navs"></a></li>
-            <li id="nav-item"><a href="#profile"><img src="nav-icons/fpf.gif" class="nav-icons" alt="navs"></a></li>
-            <li id="nav-item"><a href="#cont"><img src="nav-icons/contact.gif" class="nav-icons" alt="navs"></a></li>
-            <li id="nav-item"><a href="#certs"><img src="nav-icons/marriage-certificate.gif" class="nav-icons" alt="navs"></a></li>
-        </ul>
-    </header>
+            <a href="#greet"><img src="nav-icons/home.gif" class="nav-icons" alt="navs"></a>
+            <a href="#profile"><img src="nav-icons/fpf.gif" class="nav-icons" alt="navs"></a>
+            <a href="#projects"><img src="nav-icons/project.gif" class="nav-icons" alt="navs"></a>
+            <a href="#certs"><img src="nav-icons/marriage-certificate.gif" class="nav-icons" alt="navs"></a>
+            <a href="#cont"><img src="nav-icons/contact.gif" class="nav-icons" alt="navs"></a>
+        </header>
 
     <section class="greet" id="greet">
-        <h1 id="greet-you">Hello, Welcome to Project 01</h1>
+        <div class="greet-box">
+            <h1 class="greet-you">Hi, I'm Jomar. Welcome to my Project Portfolio</h1>
+        <h3 id="short-desc">This is my Project Portfolio, using <span class="html">HTML</span> and <span class="html">CSS</span>, soon to use <span class="html">JavaScript</span></h3>
+        </div>
     </section>
 
     <section class="profile" id="profile">
-        <h1 id="sec-name">PROFILE</h1>
+        <h1 class="sec-name">PROFILE</h1>
         <div class="parent">
             <div class="child" id="child1">
                 <img src="jomar-pfp.jpg" alt="profile picture" id="fpf">
@@ -53,40 +55,70 @@
             <div class="child" id="child2">
                 <h2 id="educ">EDUCATION</h2>
                     <h1 id = "education-line">Tuy Senior High</h1>
-                    <p id = "educ-year">2022 - 2024</p>
+                    <h1 id="educ-year">TVL-ICT</h1>
+                    <h1 id = "educ-year">2022 - 2024</p>
                     <h1 id = "education-line">Batangas State University</h1>
-                    <p id = "educ-year">2024 - present</p>
-                    <h2 id="projs">PROJECTS</h2>
-                <div class="projects">
-                
-                <a href="#" id="proj-box">
-                    <img src="ts/python.png" alt="project" id="proj-logo">
-                    <h2 id="proj-text"></h2>
-                </a>
-                <a href="#" id="proj-box">
-                    <img src="ts/python.png" alt="project" id="proj-logo">
-                    <h2 id="proj-text"></h2>
-                </a>
-                <a href="#" id="proj-box">
-                    <img src="ts/python.png" alt="project" id="proj-logo">
-                    <h2 id="proj-text"></h2>
-                </a>
-                <a href="#" id="proj-box">
-                    <img src="ts/python.png" alt="project" id="proj-logo">
-                    <h2 id="proj-text"></h2>
-                </a>
-                <a href="#" id="proj-box">
-                    <img src="ts/python.png" alt="project" id="proj-logo">
-                    <h2 id="proj-text"></h2>
-                </a>
+                    <h1 id="educ-year">Bachelor of Science in Information Technology</h1>
+                    <h1 id = "educ-year">2024 - present</h1>
             </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="sec-name">PROJECTS</h1>
+        <div class="project-div">
+            <div class="project-box" id="project1">
+                <img src="ts/python.png" alt="project" class="project-logo">
+                <h1 class="project-text">PROJECT</h1>
+                <a href="" class="project-link">Link to 🔗</a>
             </div>
-            
+            <div class="project-box" id="project2">
+                <img src="ts/python.png" alt="project" class="project-logo">
+                <h1 class="project-text">PROJECT</h1>
+                <a href="" class="project-link">Link to 🔗</a>
+            </div>
+            <div class="project-box" id="project3">
+                <img src="ts/python.png" alt="project" class="project-logo">
+                <h1 class="project-text">PROJECT</h1>
+                <a href="" class="project-link">Link to 🔗</a>
+            </div>
+            <div class="project-box" id="project4">
+                <img src="ts/python.png" alt="project" class="project-logo">
+                <h1 class="project-text">PROJECT</h1>
+                <a href="" class="project-link">Link to 🔗</a>
+            </div>
+            <div class="project-box" id="project5">
+                <img src="ts/python.png" alt="project" class="project-logo">
+                <h1 class="project-text">PROJECT</h1>
+                <a href="" class="project-link">Link to 🔗</a>
+            </div>
+            <div class="project-box" id="project6">
+                <img src="ts/python.png" alt="project" class="project-logo">
+                <h1 class="project-text">PROJECT</h1>
+                <a href="" class="project-link">Link to 🔗</a>
+            </div>        
+        </div>
+    </section>
+
+    <section class="certs" id="certs">
+        <h1 class="sec-name">CERTIFICATIONS</h1>
+
+        <div class="certs-box">
+            <img src="Certificates/hrPyBasic.png" alt="certss" class="cert-img">
+            <img src="Certificates/py.png" alt="certss" class="cert-img">
+            <img src="Certificates/pyinter.jpg" alt="certss" class="cert-img">
+            <img src="Certificates/pydev.jpg" alt="certss" class="cert-img">
+            <img src="Certificates/scientific_computing_FCC.png" alt="certss" class="cert-img">
+            <img src="Certificates/java.jpg" alt="certss" class="cert-img">
+            <img src="Certificates/cpp.png" alt="certss" class="cert-img">
+            <img src="Certificates/DA_With_AI.jpg" alt="certss" class="cert-img">
+            <img src="Certificates/softEngr.png" alt="certss" class="cert-img">
+            <img src="Certificates/ml.jpg" alt="certss" class="cert-img">
         </div>
     </section>
 
     <section class="contacts" id = "cont">
-        <h1 id="sec-name">CONTACTS</h1>
+        <h1 class="sec-name">CONTACTS</h1>
 
         <div class="contact-btn">
             <a href="#"><img src="icons/fb.gif" alt="contacts" class="contact-icons">FACEBOOK</a>
@@ -95,26 +127,8 @@
             <a href="https://github.com/devsjoms"><img src="icons/github.gif" alt="contacts" class="contact-icons">GITHUB</a>
         </div>
     </section>
-
-    <section class="certs" id="certs">
-        <h1 id="sec-name">CERTIFICATIONS</h1>
-
-        <div class="certs-box">
-            <img src="Certificates/hrPyBasic.png" alt="certss" id="cert-img">
-            <img src="Certificates/py.png" alt="certss" id="cert-img">
-            <img src="Certificates/pyinter.jpg" alt="certss" id="cert-img">
-            <img src="Certificates/pydev.jpg" alt="certss" id="cert-img">
-            <img src="Certificates/scientific_computing_FCC.png" alt="certss" id="cert-img">
-            <img src="Certificates/java.jpg" alt="certss" id="cert-img">
-            <img src="Certificates/cpp.png" alt="certss" id="cert-img">
-            <img src="Certificates/DA_With_AI.jpg" alt="certss" id="cert-img">
-            <img src="Certificates/softEngr.png" alt="certss" id="cert-img">
-            <img src="Certificates/ml.jpg" alt="certss" id="cert-img">
-        </div>
-    </section>
-
     <footer>
-        <a href="https://lordicon.com/">Icons by Lordicon.com</a>
+        <p>Jomar Naval @2026</p>
     </footer>
 </body>
 </html>
