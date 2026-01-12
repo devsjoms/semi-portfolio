@@ -233,4 +233,8 @@ section{
     height: 50px;
     width: 50px;
     border-radius: 50%;
+
+     object-fit: contain;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
