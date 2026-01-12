@@ -14,6 +14,7 @@ section{
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
     width: min(90%, 500px);
     height: 60px;
     background-color: aliceblue;
@@ -107,7 +108,7 @@ section{
     display: flex;
     gap: 20px;
     width: fit-content;
-    animation: scroll 30s linear infinite;
+    animation: scroll 15s linear infinite;
 }
 @keyframes scroll {
     from {
