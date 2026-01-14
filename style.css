@@ -46,21 +46,28 @@ section{
     color: black;
 }
 .menu a:hover{
-    color: #8a9be0;
+    color: #010103;
     text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
 }
 
 
 .greet-box{
     width: min(90%, auto);
-    padding: 50px;
-    padding: 0 15rem;
+    padding: 0 1rem;
     margin-bottom: 280px;
 }
 .greet-you{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #031728;
     font-size: 80px;
+    animation: greetyou 2s ease-in;
+}
+@keyframes greetyou{
+    from{color: rgb(239, 238, 233);}
+    to {color: rgb(35, 80, 76);}
 }
 .greet{
     margin: auto;
@@ -73,11 +80,11 @@ section{
     font-size: 30px;
 }
 .html{
-    animation: JSSpan 1s infinite;
+    animation: JSSpan 1s ease;
 }
 @keyframes JSSpan{
-    from{color: rgb(239, 216, 97);}
-    to {color: rgb(12, 253, 233);}
+    from{color: rgb(246, 245, 240);}
+    to {color: rgb(189, 208, 207);}
 }
 .profile{
     margin-top: 60px;
@@ -138,7 +145,7 @@ section{
 .ts {
     height: 80px;
     width: auto;
-    margin: 10px;
+    margin: 0;
     flex-shrink: 0;
 }
 #quote{
@@ -256,7 +263,9 @@ section{
 }
 
 .contacts{
-    margin: auto;
+    margin: 0;
+    padding: 0;
+
 }
 .contacts a{
     margin-top: 10px;
@@ -266,14 +275,14 @@ section{
     text-align: center;
     background-color: #5f6498;
     height: 80px;
-    width: min(23%,400px);
+    width: min(20%,400px);
     font-size: 0;
     border: 2px solid white;
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .contacts a:hover{
-    padding: 0 1em;
+    padding: 0 1rem;
     background-color: #1ddede;
     border-radius: 10px;
     font-size: 30px;
@@ -283,9 +292,9 @@ section{
     
 }
 .contact-btn{
-    padding: 40px;
+    padding: 0;
     margin: auto;
-    width: (1000px, 50%);
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -298,6 +307,10 @@ section{
 
 
 @media(max-width: 600px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
     .navs{
         max-height: 100px;
     }
@@ -308,17 +321,17 @@ section{
         font-size: 0.5em;
     }
     .greet-box{
-        padding: 0 5em;
+        padding: 0 1rem;
     }
     .my-logo img{
         display: block;
-        height: 40px;
+        height: 50px;
     }
     .greet-you{
         font-size: 3rem;
     }
     #short-desc{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
 
@@ -350,22 +363,6 @@ section{
         width: 100%;
         overflow: hidden;
         padding: 0 0;
-    }
-
-    .grandson {
-        gap: 20px;
-
-    }
-    @keyframes scroll {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(-50%);
-        }
-    }
-    .ts {
-        height: 50px;
     }
     #quote{
         font-size: 1rem;
@@ -437,22 +434,16 @@ section{
         
     }
     .contact-btn{
-        padding: 20px;
-        margin: auto;
         height: 10px;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+
     }
     .contact-icons{
-        margin: auto;
         height: 50px;
         width: 50px;
-        border-radius: 50%;
     }
     footer{
         padding-top: 60px;
-        margin: auto;
         font-size: 15px;
     }
 }
