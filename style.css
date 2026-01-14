@@ -1,7 +1,7 @@
 body{
-    background-color:  #051425;
-    animation: bgcolor 4s infinite;
-    padding-top: 30px;
+    background-color:  #ebedef;
+    padding: 0;
+    margin: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -19,39 +19,48 @@ section{
     scroll-margin-top: 150px;
 }
 .navs{
-    position: fixed;
-    top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    width: min(90%, 700px);
-    height: 70px;
-    background-color: rgb(255, 255, 255);
-    border: 5px solid rgb(69, 69, 130);
-    border-radius: 20px;
+    z-index: 100;
     display: flex;
     align-items: center;
-    overflow: auto;
+    justify-content: space-between;
+    position: sticky;
+    padding: 1 2;
+    max-height: 120px;
+    width: 100%;
+    margin: 0 auto;
+    top:0;
+    background-color: white;
 }
-.navs::-webkit-scrollbar{
-    height: 6px;
-
-}
-.navs::-webkit-scrollbar-thumb{
-    background-color: #0b2545;
-    border-radius: 60px;
-}
-.navs a{
-    margin: auto;
-}
-.navs a:hover{
-    transform: scale(1.3);
-}
-.nav-icons{
+.my-logo img{
+    margin-left: 30px;
+    height: 120px;
     width: auto;
-    height: 40px;
-    margin: auto;
 }
+.menu a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    color: #8a9be0;
+    text-decoration: underline;
+}
+@media(max-width: 600px){
+    .navs{
+        max-height: 100px;
+    }
+    .menu a{
+    margin-left: 0px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.5em;
+    }
+    .my-logo img{
+        display: block;
+        height: 40px;
+    }
+}
+
 .greet-box{
     width: min(90%, auto);
     padding: 50px;
@@ -142,6 +151,7 @@ section{
 .ts {
     height: 80px;
     width: auto;
+    margin: 10px;
     flex-shrink: 0;
 }
 #quote{
